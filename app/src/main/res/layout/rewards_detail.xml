@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/outline_rectangle_24">
+
+    <ImageView
+        android:id="@+id/iv_id"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/id"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="id_icon" />
+    <TextView
+        android:id="@+id/reward_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_id"
+        android:layout_margin="10dp"
+        android:text="id"/>
+
+    <ImageView
+        android:id="@+id/iv_list_id"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/list_id"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/reward_id"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="list_id_icon" />
+    <TextView
+        android:id="@+id/list_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/reward_id"
+        app:layout_constraintStart_toEndOf="@id/iv_list_id"
+        android:text="Listid"/>
+
+    <ImageView
+        android:id="@+id/iv_name"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/name"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/list_id"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="name_icon" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/list_id"
+        app:layout_constraintStart_toEndOf="@id/iv_name"
+        android:text="name"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
