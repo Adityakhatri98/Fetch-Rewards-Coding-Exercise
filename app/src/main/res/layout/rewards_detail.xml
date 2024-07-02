@@ -5,34 +5,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/outline_rectangle_24">
 
-    <ImageView
-        android:id="@+id/iv_id"
-        android:layout_width="24dp"
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
         android:layout_height="24dp"
-        android:src="@drawable/id"
+        android:text="Id:"
+        android:textSize="20sp"
         android:layout_margin="10dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:contentDescription="id_icon" />
+        android:contentDescription="id_Title" />
     <TextView
         android:id="@+id/reward_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@id/iv_id"
+        app:layout_constraintStart_toEndOf="@id/tv_id"
         android:layout_margin="10dp"
         android:text="id"/>
 
-    <ImageView
-        android:id="@+id/iv_list_id"
-        android:layout_width="24dp"
+    <TextView
+        android:id="@+id/tv_list_id"
+        android:layout_width="wrap_content"
         android:layout_height="24dp"
-        android:src="@drawable/list_id"
+        android:text="List Id:"
         android:layout_margin="10dp"
+        android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@id/reward_id"
         app:layout_constraintStart_toStartOf="parent"
-        android:contentDescription="list_id_icon" />
+        android:contentDescription="list_id_" />
     <TextView
         android:id="@+id/list_id"
         android:layout_width="wrap_content"
@@ -40,14 +42,15 @@
         android:textSize="20sp"
         android:layout_margin="10dp"
         app:layout_constraintTop_toBottomOf="@id/reward_id"
-        app:layout_constraintStart_toEndOf="@id/iv_list_id"
+        app:layout_constraintStart_toEndOf="@id/tv_list_id"
         android:text="Listid"/>
 
-    <ImageView
-        android:id="@+id/iv_name"
-        android:layout_width="24dp"
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
         android:layout_height="24dp"
-        android:src="@drawable/name"
+        android:text="Name:"
+        android:textSize="20sp"
         android:layout_margin="10dp"
         app:layout_constraintTop_toBottomOf="@id/list_id"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,7 +62,7 @@
         android:textSize="20sp"
         android:layout_margin="10dp"
         app:layout_constraintTop_toBottomOf="@id/list_id"
-        app:layout_constraintStart_toEndOf="@id/iv_name"
+        app:layout_constraintStart_toEndOf="@id/tv_name"
         android:text="name"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
